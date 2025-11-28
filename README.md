@@ -3,14 +3,13 @@
 本專案為一個輕量化的後端服務，用於英語文章解析與字彙管理。
 後端以 Flask 撰寫，所有資料皆以 JSON 檔形式保存，不需要資料庫。
 
-##功能概要
+## 功能概要
 
 - 解析文章並抽取單字
 - 管理使用者字彙庫（words.json）
 - 記錄單字出現頻率（seen_words.json）
 - 儲存與讀取文章（articles/*.json）
 - 可選：整合 n8n workflow，自動獲取文章與翻譯
-- 完全無狀態（除了 JSON 檔）
 
 ## 主要 API
 ### 文章解析
@@ -56,7 +55,14 @@ POST /api/n8n_callback
 }
 ```
 本地執行方式
-`python app.py`
+```
+python app.py
+```
+或
+```
+flask run
+```
+
 
 
 服務啟動於：
