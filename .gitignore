@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Data 資料庫（避免推上 GitHub）
+*.json
+*.u8
+*.csv
+
+# n8n 設定（避免暴露）
+n8n/
+
+# Logs
+*.log
+
+#
+tests/
+.pytest_cache
+pytest.ini
